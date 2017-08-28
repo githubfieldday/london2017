@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<main class="bg-purple header" role="main">
+  <header class="container-lg p-responsive">
+    {% include header.html %}
+    <div class="pb-6 d-flex flex-items-center flex-justify-center flex-column">
+      <div class="umbrella-wrapper mb-2">
+        {% include umbrella.svg %}
+      </div>
+      {% include GitHub.svg %}
+      <code class="h1 text-white">Field Day</code>
+    </div>
+  </header>
+  {% include squiggle-white.svg %}
+</main>
+
+<div class="container-md p-responsive py-6 d-flex flex-items-center flex-justify-center flex-column mb-2">
+  <h2 class="alt-h2 lh-condensed my-3 text-center">An unconference for leaders of technical student communities</h2>
+  <p class="py-2 text-center"><strong>4th of November</strong> at City University of London</p>
+  <span class="btn btn-outline btn-outline-purple mt-3 disabled">Registration not yet open 🌂</span>
+  <h3 class="alt-h3 py-2 text-center mt-4">Join the mailing list to find out when registration opens.</h3>
+  <a href="http://github.us11.list-manage1.com/subscribe?u=9d7ced8c4bbd6c2f238673f0f&id=8eddd9fb6f" class="btn btn-outline-purple">Sign up to the mailing list</a>
+</div>
+
+<div class="container-md mb-6 p-responsive text-center py-6 d-flex flex-items-center flex-justify-center flex-column">
+  <h2 class="alt-h2 lh-condensed mb-3 text-center">A day of discussions</h2>
+  <p class="alt-h3 mb-3 text-center">Field Day brings together a group of student leaders for a day of conversation in the form of lightning talks, discussions, games, or whatever suits the topic best.</p>
+</div>
+
+<div class="container-md p-responsive py-6" id="schedule">
+  <h1 class="text-center">Schedule</h1>
+
+  <table class="data-table">
+    <tbody>
+      <tr><td><time>08:00</time></td><td>Registration Opens & Breakfast</td></tr>
+      <tr><td><time>09:00</time></td><td>Welcome to Field Day</td></tr>
+      <tr><td><time>10:00</time></td><td>Icebreaker to get to know each other</td></tr>
+      <tr><td><time>11:00</time></td><td>Breakout Discussions I</td></tr>
+      <tr><td><time>11:30</time></td><td>Breakout Discussions II</td></tr>
+      <tr><td><time>12:00</time></td><td>Lunch</td></tr>
+      <tr><td><time>14:15</time></td><td>Breakout Discussions III</td></tr>
+      <tr><td><time>14:45</time></td><td>Breakout Discussions IV</td></tr>
+      <tr><td><time>15:15</time></td><td>Break</td></tr>
+      <tr><td><time>16:30</time></td><td>Breakout Discussions V</td></tr>
+      <tr><td><time>17:00</time></td><td>Breakout Discussions VI</td></tr>
+      <tr><td><time>17:30</time></td><td>Feedback Round</td></tr>
+      <tr><td><time>17:55</time></td><td>Closing Remarks</td></tr>
+      <tr><td><time>18:00</time></td><td>Dinner</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container-lg mb-6 p-responsive py-6 d-flex flex-items-center flex-sm-justify-between flex-justify-center text-center text-sm-left" id="venue">
+  <address class="addr mono">
+    <h2 class="alt-h2 lh-condensed mb-2">City University of London</h3>
+    The Pavillion</br>
+    Northampton Square</br>
+    London, EC1V 0HB
+  </address>
+  <div class="map-container">
+    <iframe
+      width="600"
+      height="450"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDS02MdHUUV8zVPriYlLsYIK4CvIoUcq8&q=Northampton+Square+EC1V+0HB" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<div class="py-6 p-responsive mt-2 bg-gray-light" id="faq">
+  <div class="container-md">
+    <h3 class="text-center">FAQ</h3>
+
+    {% for faq in site.faqs %}
+      <div class="py-3" id="{{ faq.q | slugify }}">
+        <h4 class="mb-1"><a href="#{{ faq.q | slugify }}" class="text-purple">{{faq.q}}</a></h4>
+        <p>{{ faq.a }}</p>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
