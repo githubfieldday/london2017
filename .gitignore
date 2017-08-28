@@ -81,3 +81,9 @@ node_modules
 
 # Oracle configuration files
 *.ora
+
+#jekyll
+_site
+.sass-cache
+.jekyll-metadata
+.publish
