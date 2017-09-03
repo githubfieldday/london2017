@@ -149,3 +149,21 @@
         border-color: $purple-300;
     }
 }
+
+.event-imgs {
+    display: block;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 70%;
+
+    img {
+        align-content: center;
+        display: inline-block;
+        justify-content: center;
+        width: 48%;
+        border-radius: 4px;
+        margin: 1px;
+    }
+
+
+}
