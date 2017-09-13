@@ -39,7 +39,7 @@ faqs:
   - q: Is there a Code of Conduct for this event?
     a: Yes! You can view it <a href="coc/" class="text-purple">here.</a>
   - q: Who is organizing Field Day?
-    a: Field Day is organized by Campus Experts in London.
+    a: Field Day is organized by Campus Experts in London. <a href="//twitter.com/abdulajet" class="text-purple" target="_blank">Abdul</a>, <a href="//twitter.com/ruxi_ang" class="text-purple"  target="_blank">Ruxi</a>, and <a href="//twitter.com/wilhelmklopp" class="text-purple" target="_blank">Wil</a>.
 
 # Build settings
 markdown: kramdown
