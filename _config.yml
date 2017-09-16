@@ -8,8 +8,8 @@
 # Site settings
 title: GitHub Field Day
 description: > # this means to ignore newlines until "baseurl:"
-  An unconference for leaders of technical student communities. 4th of November at City University of London.
-date: 2017-11-04T07:00:00.000Z
+  An unconference for leaders of technical student communities. 18th of November at Monzo HQ.
+date: 2017-11-18T09:00:00.000Z
 url: "http://githubfieldday.com" # the base hostname & protocol for your site
 github_repo: https://github.com/githubfieldday/london2017
 exclude: [
@@ -23,7 +23,7 @@ baseurl: '/london2017'
 
 faqs:
   - q: Who can attend Field Day?
-    a: Field Day is for student leaders of technical communities all around the world who are currently in the Bay Area for internships or similar summer activities. Most attendees will be undergraduate students.
+    a: Field Day is for student leaders of technical communities based in London. Most attendees will be undergraduate students.
   - q: What's a student leader?
     a: A student leader is someone who's actively involved in improving their local technical community. They might be the president or chairperson of their school's tech club or be one of the organizers of the annual hackathon. They might run the student hardware group or be actively involved in introducing other students to programming.
   - q: What's an unconference?
